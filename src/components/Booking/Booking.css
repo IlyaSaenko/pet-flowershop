@@ -1,0 +1,89 @@
+.booking {
+	max-width: 90%;
+	margin: 0 auto;
+	padding: 0;
+	padding-bottom: 0px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.booking__title {
+	font-family: 'Oswald', sans-serif;
+  font-size: 65px;
+	padding-bottom: 15px;
+  /* line-height: 8px; */
+  font-weight: 500;
+	border-bottom: 8px solid #000000;
+}
+
+.booking__title_span {
+	color: #ff5c7f;
+}
+
+.booking__form {
+	height: 460px;
+	margin: 0;
+	display: grid;
+	grid-template-columns: repeat(2, 380px);
+	grid-template-rows: repeat(2, 300px);
+	gap: 10px 5px;
+	justify-content: space-between;
+	border: none;
+}
+
+.booking__inputs-block {
+	/* width: 500px; */
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.booking__placeholder {
+	margin: 0;
+	padding: 20px 0 10px 0;
+	font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  line-height: 18px;
+  font-weight: 300;
+	
+}
+
+.booking__input {
+	width: 320px;
+	/* margin-bottom: 4px; */
+  padding: 8px;
+	background-color: rgb(211, 209, 209);
+	border: none;
+  border-radius: 8px;
+	font-family: 'Montserrat', 'Montserrat-Light', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 300;
+}
+
+.booking__input:last-child {
+	margin-bottom: 40px;
+}
+
+.booking__image {
+	width: 565px;
+	height: 375px;
+}
+
+.booking__submit-button {
+	width: 170px;
+	height: 68px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Montserrat', 'Arial', 'Helvetica', sans-serif;
+	font-size: 20px;
+	line-height: 16px;
+	font-weight: 600;
+	text-decoration: none;
+	border: none;
+	color: #ffffff;
+	background-color: #ff5c7f;
+	cursor: pointer;
+}

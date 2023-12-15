@@ -1,0 +1,30 @@
+.examples {
+	margin: 0 auto;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+}
+
+.examples__title {
+	padding-bottom: 50px;
+	text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 70px;
+  line-height: 8px;
+  font-weight: 500;
+	text-decoration: underline;
+}
+
+.examples__photo {
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 15px 15px;
+}
+
+.examples__image {
+	width: 238px;
+	height: 241px;
+	border-radius: 20%;
+}

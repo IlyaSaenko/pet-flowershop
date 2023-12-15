@@ -1,5 +1,5 @@
 .header {
-	max-width: 980px;
+	max-width: 1100px;
 	min-height: 80px;
 	margin: 0 auto;
 	color: black;
@@ -18,14 +18,105 @@
 	color: #000;
 }
 
+/* .header__login {
+	margin-left: 550px;
+	margin-right: 20px;
+	border-radius: 5px;
+	border: 0;
+	cursor: pointer;
+	font-size: 14px;
+  line-height: 30px;
+  font-weight: 500;
+	color: #fff;
+	background-color: #a9bfc8;
+	background-color: #b4b2b2;
+} */
+
 .header__login {
 	margin-left: 600px;
-	border-radius: 40px;
-	border: 0;
+	/* margin-right: 20px; */
 	cursor: pointer;
 	font-size: 16px;
   line-height: 30px;
   font-weight: 500;
-	color: #000000;
-	background-color: #a9bfc8;
+	color: #fff;
+
+	transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: none;
+}
+
+.enter {
+	/* background: rgba(2,126,251,1); */
+	background-color: #ff5c7f;
+	/* background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%); */
+	padding: 0;
+  border: none;
+	width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+}
+
+.header__login span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.header__login:before,
+
+.header__login:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #ff5c7f;
+  transition: all 0.3s ease;
+}
+.header__login:before {
+  height: 0%;
+  width: 2px;
+}
+.header__login:after {
+  width: 0%;
+  height: 2px;
+}
+.header__login:hover{
+   background: transparent;
+  box-shadow: none;
+}
+.header__login:hover:before {
+  height: 100%;
+}
+.header__login:hover:after {
+  width: 100%;
+}
+.header__login span:hover{
+   color: #ff5c7f;
+}
+.header__login span:before,
+.header__login span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+   background: #ff5c7f;
+  transition: all 0.3s ease;
+}
+.header__login span:before {
+  width: 2px;
+  height: 0%;
+}
+.header__login span:after {
+  width: 0%;
+  height: 2px;
+}
+.header__login span:hover:before {
+  height: 100%;
+}
+.header__login span:hover:after {
+  width: 100%;
 }
