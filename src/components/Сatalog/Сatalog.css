@@ -62,6 +62,16 @@
   font-weight: 300;
 }
 
+/* .catalog__bouquet_purchase {
+	height: 35px;
+	font-family: 'Montserrat', 'Montserrat-Light', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 300;
+	border: none;
+	cursor: pointer;
+} */
+
 .catalog__bouquet_purchase {
 	height: 35px;
 	font-family: 'Montserrat', 'Montserrat-Light', sans-serif;
@@ -70,38 +80,82 @@
   font-weight: 300;
 	border: none;
 	cursor: pointer;
-}
 
-/* .wave {
-  display: block;
+  transition: all 0.3s ease;
   position: relative;
-  height: 40px;
-  width: 100%;
-  background: rgb(57, 27, 112);
-  transform: scale(1, 1);
+  display: inline-block;
+  outline: none;
+  border: none;
 }
 
-.wave:before {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 100%;
-  width: 100%;
-  height: 300px;
-  background-color: white;
-  right: -25%;
-  top: 20px;
+.adding {
+	/* background: rgba(2,126,251,1); */
+	background-color: #ffffff;
+	/* background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%); */
+	padding: 0;
+  border: none;
+	/* width: 130px;
+  height: 40px; */
+  line-height: 36px;
 }
 
-.wave:after {
-  content: "";
+.catalog__bouquet_purchase span {
+  position: relative;
   display: block;
-  position: absolute;
-  border-radius: 100%;
   width: 100%;
-  height: 300px;
-  background-color: rgb(57, 27, 112);
-  left: -25%;
-  top: -240px;
-  clip-path: ellipse(100% 15% at -15% 100%);
-} */
+  height: 100%;
+}
+.catalog__bouquet_purchase:before,
+
+.catalog__bouquet_purchase:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+.catalog__bouquet_purchase:before {
+  height: 0%;
+  width: 2px;
+}
+.catalog__bouquet_purchase:after {
+  width: 0%;
+  height: 2px;
+}
+.catalog__bouquet_purchase:hover{
+   background: transparent;
+  box-shadow: none;
+}
+.catalog__bouquet_purchase:hover:before {
+  height: 100%;
+}
+.catalog__bouquet_purchase:hover:after {
+  width: 100%;
+}
+.catalog__bouquet_purchase span:hover{
+   color: #000000;
+}
+.catalog__bouquet_purchase span:before,
+.catalog__bouquet_purchase span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+   background: #ffffff;
+  transition: all 0.3s ease;
+}
+.catalog__bouquet_purchase span:before {
+  width: 2px;
+  height: 0%;
+}
+.catalog__bouquet_purchase span:after {
+  width: 0%;
+  height: 2px;
+}
+.catalog__bouquet_purchase span:hover:before {
+  height: 100%;
+}
+.catalog__bouquet_purchase span:hover:after {
+  width: 100%;
+}

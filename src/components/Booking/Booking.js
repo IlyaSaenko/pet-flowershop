@@ -37,7 +37,7 @@ function Booking() {
             <p className="booking__placeholder">Комментарий</p>
             <input className="booking__input booking__input-comment" type="text" placeholder="" />
           </label>
-          <button className="booking__submit-button" type="button" name="submit-button">отправить</button>
+          <button className="booking__submit-button book" type="button" name="submit-button"><span>отправить</span></button>
         </fieldset>
       </form>
     </section>

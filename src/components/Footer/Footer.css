@@ -1,5 +1,5 @@
 .footer {
-	max-width: 90%;
+	/* max-width: 90%; */
 	margin: 0 auto;
 	padding: 0;
 	display: flex;
@@ -20,10 +20,9 @@
 
 .footer__block {
 	max-width: 980px;
-
 	margin: 0;
 	display: grid;
-	grid-template-columns: 400px 20% min-content max-content 1fr 2fr auto;
+	grid-template-columns: 450px 20% min-content max-content 1fr 2fr auto;
 	grid-template-rows: repeat(2, 300px);
 	justify-content: space-between;
 }
@@ -61,5 +60,5 @@
 	width: 600px;
 	height: 460px;
 	border-radius: 3em;
-  box-shadow: 0 0 2em rgba(28, 131, 216, 0.2);
+  box-shadow: 0 0 2em rgba(252, 112, 159, 0.253);
 }
