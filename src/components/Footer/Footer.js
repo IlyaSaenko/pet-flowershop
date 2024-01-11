@@ -30,7 +30,7 @@ import iconOdnoklassniki from '../../../src/images/odn-icon.svg';
 
 function Footer() {
 	return (
-		<section className="footer">
+		<section className="footer" id="footer">
 			<h1 className="footer__title">Контакты</h1>
 			<div className="footer__block">
 				<div className="footer__contacts">

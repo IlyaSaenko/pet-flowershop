@@ -3,7 +3,7 @@ import flowerBasket from '../../../src/images/flower-basket.png';
 
 function Delivery() {
 	return (
-		<section className="delivery">
+		<section className="delivery" id="delivery">
 			<h1 className="delivery__title">Доставка</h1>
 			<div className="delivery__block">
 				<img className="delivery__image" src={flowerBasket} alt="Корзинка с цветами" />

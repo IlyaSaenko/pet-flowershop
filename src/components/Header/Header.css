@@ -1,21 +1,28 @@
 .header {
-	max-width: 1100px;
-	min-height: 80px;
-	margin: 0 auto;
-	color: black;
-	border: 1px black;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	font-family: 'Montserrat', 'Montserrat-Light', sans-serif;
+  max-width: 1100px;
+  min-height: 80px;
+  margin: 0 auto;
+  color: black;
+  border: 1px black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Montserrat', 'Montserrat-Light', sans-serif;
   font-size: 18px;
   line-height: 16px;
   font-weight: 300;
 }
 
 .header__button {
-	text-decoration: none;
-	color: #000;
+  text-decoration: none;
+  color: #000;
+}
+
+.header__button:hover {
+  text-shadow: 0px 0px 0px rgb(255, 51, 177), 0 0 2em rgb(255, 57, 149);
+  color: #ff5c7f;
+  /* Параметры тени */
+  /* Белый цвет текста */
 }
 
 /* .header__login {
@@ -33,15 +40,15 @@
 } */
 
 .header__login {
-	margin-left: 600px;
-	/* margin-right: 20px; */
-	cursor: pointer;
-	font-size: 16px;
+  margin-left: 600px;
+  /* margin-right: 20px; */
+  cursor: pointer;
+  font-size: 16px;
   line-height: 30px;
   font-weight: 500;
-	color: #fff;
+  color: #fff;
 
-	transition: all 0.3s ease;
+  transition: all 0.3s ease;
   position: relative;
   display: inline-block;
   outline: none;
@@ -49,12 +56,12 @@
 }
 
 .enter {
-	/* background: rgba(2,126,251,1); */
-	background-color: #ff5c7f;
-	/* background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%); */
-	padding: 0;
+  /* background: rgba(2,126,251,1); */
+  background-color: #ff5c7f;
+  /* background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%); */
+  padding: 0;
   border: none;
-	width: 130px;
+  width: 130px;
   height: 40px;
   line-height: 42px;
 }
@@ -65,6 +72,7 @@
   width: 100%;
   height: 100%;
 }
+
 .header__login:before,
 
 .header__login:after {
@@ -75,47 +83,58 @@
   background: #ff5c7f;
   transition: all 0.3s ease;
 }
+
 .header__login:before {
   height: 0%;
   width: 2px;
 }
+
 .header__login:after {
   width: 0%;
   height: 2px;
 }
-.header__login:hover{
-   background: transparent;
+
+.header__login:hover {
+  background: transparent;
   box-shadow: none;
 }
+
 .header__login:hover:before {
   height: 100%;
 }
+
 .header__login:hover:after {
   width: 100%;
 }
-.header__login span:hover{
-   color: #ff5c7f;
+
+.header__login span:hover {
+  color: #ff5c7f;
 }
+
 .header__login span:before,
 .header__login span:after {
   position: absolute;
   content: "";
   left: 0;
   bottom: 0;
-   background: #ff5c7f;
+  background: #ff5c7f;
   transition: all 0.3s ease;
 }
+
 .header__login span:before {
   width: 2px;
   height: 0%;
 }
+
 .header__login span:after {
   width: 0%;
   height: 2px;
 }
+
 .header__login span:hover:before {
   height: 100%;
 }
+
 .header__login span:hover:after {
   width: 100%;
 }

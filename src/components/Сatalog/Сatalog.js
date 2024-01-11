@@ -10,7 +10,7 @@ import orchids from '../../../src/images/orchids.png';
 
 function Catalog() {
 	return (
-		<section className="catalog">
+		<section className="catalog" id="catalog">
 			<h1 className="catalog__title">каталог</h1>
 			<ul className="catalog__bouquets">
 

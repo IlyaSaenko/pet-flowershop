@@ -105,7 +105,7 @@ function Feedback() {
 	};
 
 	return (
-		<section className='feedback'>
+		<section className='feedback' id="feedback">
 			<h1 className="feedback__title">Отзывы</h1>
 			<div className="feedback__container">
 				<Slider {...settings}>
@@ -148,10 +148,16 @@ const card = [
 	  собранный с позитивным настроением. Лучший цветочный! Молодцы!`
 	},
 	{
-		name: `Диана`,
-		img: `/users/user2.jpg`,
+		name: `Любовь`,
+		img: `/users/user7.jpg`,
 		review: `Ценю ваш сервис. Менеджеры всегда на связи по всем каналам,
 		и постоянно пристально следят за курьерами. Цветы, разумеется, тоже на высоте. У таких людей всегда все схвачено!`
+	},
+	{
+		name: `Николай`,
+		img: `/users/user8.jpg`,
+		review: `Ваш букет очаровал девушку, которой предназначался.
+		А это гораздо ценнее любых денег. Получите мою признательность и наилучшие пожелания.`
 	}
 ];
 
