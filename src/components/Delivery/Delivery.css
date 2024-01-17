@@ -1,6 +1,7 @@
 .delivery {
 	/* max-width: 980px; */
 	margin: 0 auto;
+	margin-top: 20px;
 	padding: 0;
 	display: flex;
 	position: relative;

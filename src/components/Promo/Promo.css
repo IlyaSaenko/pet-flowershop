@@ -65,8 +65,10 @@
   font-weight: 600;
 	text-decoration: none;
 	color: #ffffff;
+	transition: 0.1s;
 }
 
 .promo__section-button:hover {
-  box-shadow: 0 0 2em rgba(255, 93, 147, 0.301);
+  /* box-shadow: 0 0 2em rgba(255, 93, 147, 0.301); */
+  transform: scale(1.03);
 }

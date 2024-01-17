@@ -1,4 +1,4 @@
-.examples {
+/* .examples {
 	margin: 0 auto;
 	padding-bottom: 50px;
 	display: flex;
@@ -27,4 +27,103 @@
 	width: 238px;
 	height: 241px;
 	border-radius: 20%;
+} */
+
+.examples__title {
+	/* padding-bottom: 50px; */
+	text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 70px;
+  /* line-height: 8px; */
+  font-weight: 500;
+	text-decoration: underline;
+}
+
+.examples__gallery {
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  /* max-width: 620px; */
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 15px 15px;
+}
+
+.examples__gallery .examples__image {
+  cursor: pointer;
+}
+
+.examples__gallery .examples__image img {
+	width: 238px;
+	height: 241px;
+  max-width: 100%;
+	border-radius: 20%;
+	object-fit: cover;
+	transition: 0.1s;
+}
+
+.examples__gallery .examples__image img:hover {
+  transform: scale(1.07);
+}
+
+.examples__slider {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.examples__slider .examples__button-close, .examples__slider .examples__button-prev, .examples__slider .examples__button-next {
+  position: fixed;
+  cursor: pointer;
+  opacity: 0.6;
+  color: #fff;
+  z-index: 9999;
+}
+
+.examples__button-next:hover, .examples__button-prev:hover, .examples__button-close:hover {
+  opacity: 1;
+}
+
+.examples__slider .examples__button-close {
+  top: 40px;
+  right: 40px;
+}
+
+.examples__slider .examples__button-prev {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 40px;
+}
+
+.examples__slider .examples__button-next {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 40px;
+}
+
+.examples__full-screen {
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.examples__full-screen img {
+  max-width: 100%;
+  max-height: 100%;
+  pointer-events: none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */  
 }

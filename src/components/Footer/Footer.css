@@ -54,6 +54,11 @@
 .footer__link_icon {
 	width: 44px;
 	height: 44px;
+	transition: 0.1s;
+}
+
+.footer__link_icon:hover {
+  transform: scale(1.07);
 }
 
 .footer__map {

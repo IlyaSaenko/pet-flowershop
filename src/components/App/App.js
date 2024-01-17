@@ -8,6 +8,7 @@ import Examples from "../Examples/Examples";
 import Feedback from "../Feedback/Feedback";
 import Booking from "../Booking/Booking";
 import Footer from "../Footer/Footer";
+import galleryImages from "../../utils/galleryImages";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <Promo />
       <Catalog />
       <Delivery />
-      <Examples />
+      <Examples galleryImages={galleryImages} />
       <Feedback />
       <Booking />
       <Footer />
